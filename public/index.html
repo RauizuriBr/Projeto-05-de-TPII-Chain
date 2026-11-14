@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RegistroLab | Início</title>
+  <link rel="stylesheet" href="/estilo.css">
+  <script defer src="/site.js"></script>
+</head>
+<body data-pagina="inicio">
+  <header class="topo"><div class="container barra"><a href="/" class="marca">Registro<span>Lab</span></a><nav><a class="ativo" href="/">Início</a><a href="/cadastro.html">Cadastrar</a><a href="/listar.html">Participantes</a><a href="/acesso.html">Verificar acesso</a></nav></div></header>
+  <main class="container">
+    <section class="hero"><span class="etiqueta">PROJETO 05 · TPII</span><h1>Cadastro de participantes e controle de acesso</h1><p>Gerencie participantes de oficinas acadêmicas. Os cadastros ficam salvos em SQLite e o acesso é verificado em etapas usando o padrão Chain of Responsibility.</p><div class="acoes"><a class="botao" href="/cadastro.html">Novo participante</a><a class="botao secundario" href="/acesso.html">Testar acesso</a></div></section>
+    <section class="resumo"><article class="painel indicador"><span>Cadastros</span><strong id="totalAlunos">—</strong></article><article class="painel indicador"><span>Ativos</span><strong id="totalAtivos">—</strong></article><article class="painel indicador"><span>Inativos</span><strong id="totalInativos">—</strong></article></section>
+    <section class="painel informativo"><h2>Como funciona a validação?</h2><p>O pedido passa por cinco verificações: preenchimento, formato, existência do cadastro, situação do participante e código de acesso. Cada etapa encaminha para a próxima somente quando a condição é atendida.</p><div class="etapas"><span>1. Campos</span><span>2. Formato</span><span>3. Cadastro</span><span>4. Situação</span><span>5. Código</span></div></section>
+  </main>
+  <footer class="rodape">Técnicas de Programação II • Node.js, SQLite e Chain of Responsibility</footer>
+</body>
+</html>

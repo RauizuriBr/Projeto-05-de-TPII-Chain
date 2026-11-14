@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RegistroLab | Cadastro</title><link rel="stylesheet" href="/estilo.css"><script defer src="/site.js"></script></head>
+<body data-pagina="cadastro">
+<header class="topo"><div class="container barra"><a href="/" class="marca">Registro<span>Lab</span></a><nav><a href="/">Início</a><a class="ativo" href="/cadastro.html">Cadastrar</a><a href="/listar.html">Participantes</a><a href="/acesso.html">Verificar acesso</a></nav></div></header>
+<main class="container"><div class="cabecalho-pagina"><h1 id="tituloFormulario">Cadastrar participante</h1><p>Preencha os dados da pessoa e defina um código de seis dígitos para o acesso.</p></div>
+<form id="formCadastro" class="painel formulario">
+  <h2>Dados pessoais</h2>
+  <div class="grade-campos">
+    <label class="campo largo">Nome completo<input name="nome" required maxlength="100" autocomplete="name"></label>
+    <label class="campo">E-mail<input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+    <label class="campo">Telefone<input name="telefone" required placeholder="11999998888" inputmode="tel" autocomplete="tel"></label>
+    <label class="campo">Curso / turma<input name="curso" required maxlength="80" placeholder="Ex.: Desenvolvimento de Sistemas"></label>
+    <label class="campo">Situação<select name="situacao"><option>Ativo</option><option>Inativo</option></select></label>
+  </div>
+  <h2>Endereço</h2><div class="grade-campos">
+    <div class="campo"><label for="cep">CEP</label><div class="linha-campo"><input id="cep" name="cep" required placeholder="00000-000" maxlength="9" inputmode="numeric" autocomplete="postal-code"><button id="buscarCep" type="button" class="botao pequeno secundario">Buscar CEP</button></div></div>
+    <label class="campo">Rua / avenida<input name="logradouro" required maxlength="120" autocomplete="address-line1"></label>
+    <label class="campo">Número<input name="numero" required maxlength="20" autocomplete="address-line2"></label>
+    <label class="campo">Bairro<input name="bairro" required maxlength="80"></label>
+    <label class="campo">Cidade<input name="cidade" required maxlength="80" autocomplete="address-level2"></label>
+    <label class="campo">UF<input name="uf" required maxlength="2" placeholder="SP" autocomplete="address-level1"></label>
+  </div>
+  <h2>Controle de acesso</h2>
+  <div class="grade-campos"><label class="campo">Código de 6 dígitos<input name="codigo" type="password" inputmode="numeric" maxlength="6" placeholder="Ex.: 123456" autocomplete="new-password"></label><p class="dica" id="ajudaCodigo">Esse código será utilizado para validar a entrada do participante.</p></div>
+  <div class="acoes finais"><button class="botao" type="submit" id="salvarCadastro">Salvar cadastro</button><a class="botao secundario" href="/listar.html">Cancelar</a></div><p class="mensagem" id="mensagemCadastro" role="status" aria-live="polite"></p>
+</form></main>
+<footer class="rodape">Técnicas de Programação II • RegistroLab</footer>
+</body></html>

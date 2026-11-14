@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RegistroLab | Participantes</title><link rel="stylesheet" href="/estilo.css"><script defer src="/site.js"></script></head>
+<body data-pagina="lista">
+<header class="topo"><div class="container barra"><a href="/" class="marca">Registro<span>Lab</span></a><nav><a href="/">Início</a><a href="/cadastro.html">Cadastrar</a><a class="ativo" href="/listar.html">Participantes</a><a href="/acesso.html">Verificar acesso</a></nav></div></header>
+<main class="container"><div class="cabecalho-pagina linha-titulo"><div><h1>Participantes cadastrados</h1><p>Consulte, edite ou exclua os registros.</p></div><a class="botao" href="/cadastro.html">Novo cadastro</a></div>
+<section class="painel"><div class="filtros"><label class="campo">Pesquisar por nome ou e-mail<input id="pesquisa" type="search" placeholder="Digite para filtrar..."></label><label class="campo">Situação<select id="filtroSituacao"><option value="">Todas</option><option>Ativo</option><option>Inativo</option></select></label></div><div class="rolagem"><table><thead><tr><th>ID</th><th>Nome</th><th>E-mail</th><th>Curso</th><th>Situação</th><th>Ações</th></tr></thead><tbody id="tabelaParticipantes"><tr><td colspan="6">Carregando...</td></tr></tbody></table></div><p class="mensagem" id="mensagemLista" role="status" aria-live="polite"></p></section>
+</main><footer class="rodape">Técnicas de Programação II • RegistroLab</footer></body></html>
